@@ -14,6 +14,12 @@ source:
 go install github.com/espebra/eprom@latest
 ```
 
+## Dependencies
+
+All dependencies are vendored in `vendor/`, so builds need no network
+access. After changing dependencies, run `go mod tidy && go mod vendor`.
+Dependabot opens weekly pull requests for Go modules and GitHub Actions.
+
 ## Releasing
 
 Push a tag of the form `vX.Y.Z`. The release workflow runs the tests, builds

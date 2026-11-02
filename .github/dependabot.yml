@@ -1,0 +1,18 @@
+version: 2
+updates:
+  # Go modules. Dependabot detects the vendor/ directory and updates it
+  # together with go.mod and go.sum.
+  - package-ecosystem: gomod
+    directory: /
+    schedule:
+      interval: weekly
+    groups:
+      go-dependencies:
+        patterns:
+          - "*"
+
+  # Actions used in .github/workflows.
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
