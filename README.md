@@ -6,7 +6,7 @@ metric's `HELP` text. History is kept in memory only and starts empty.
 
 ## Install
 
-Download a binary for Linux or macOS from the
+Download a binary for Linux, macOS or Windows from the
 [releases page](https://github.com/espebra/eprom/releases), or build from
 source:
 
@@ -17,7 +17,7 @@ go install github.com/espebra/eprom@latest
 ## Releasing
 
 Push a tag of the form `vX.Y.Z`. The release workflow runs the tests, builds
-binaries for Linux and macOS (amd64 and arm64) and publishes them as a GitHub
+binaries for Linux, macOS and Windows (amd64 and arm64) and publishes them as a GitHub
 release:
 
 ```sh
